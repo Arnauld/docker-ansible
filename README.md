@@ -13,14 +13,14 @@ $
 ```
 
 ```
-$ cd projects/bixxi-platform
-$ docker run --rm -v $(pwd):/root/bixxi-platform -v /c/Users/$USERNAME/.ssh:/root/.ssh -ti trv/ansible /bin/bash
+$ cd projects/platform
+$ docker run --rm -v $(pwd):/root/platform -v /c/Users/$USERNAME/.ssh:/root/.ssh -ti trv/ansible /bin/bash
 ```
 
 ```
 # cd 
 # cd bixxi-platform
-# ansible-playbook -i inventory/bixxi/ovh-alo playbooks/bixxi-platform.yml -u arnauld -v 2>&1 | tee ansible-output-2.log
+# ansible-playbook -i inventory/ovh-alo playbooks/platform.yml -u arnauld -v 2>&1 | tee ansible-output-2.log
 ```
 
 # Notes
@@ -28,10 +28,10 @@ $ docker run --rm -v $(pwd):/root/bixxi-platform -v /c/Users/$USERNAME/.ssh:/roo
 ## ansible all infra
 
 ```bash
--v $(pwd):/root/bixxi-platform
+-v $(pwd):/root/platform
 ```
 
-On monte le repertoire courant (`cd projects/bixxi-platform`) contenant le projet `bixxi-platform` dans un dossier `bixxi-platform` du container.
+On monte le repertoire courant (`cd projects/platform`) contenant le projet `platform` dans un dossier `platform` du container.
 
 ## SSH
 
