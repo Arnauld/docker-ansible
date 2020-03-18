@@ -25,7 +25,7 @@ $ docker run --rm -v $(pwd):/root/platform -v /c/Users/$USERNAME/.ssh:/root/.ssh
 
 # Notes
 
-## ansible all infra
+## platform
 
 ```bash
 -v $(pwd):/root/platform
