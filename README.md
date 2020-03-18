@@ -19,7 +19,7 @@ $ docker run --rm -v $(pwd):/root/platform -v /c/Users/$USERNAME/.ssh:/root/.ssh
 
 ```
 # cd 
-# cd bixxi-platform
+# cd platform
 # ansible-playbook -i inventory/ovh-alo playbooks/platform.yml -u arnauld -v 2>&1 | tee ansible-output-2.log
 ```
 
