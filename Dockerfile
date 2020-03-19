@@ -39,10 +39,7 @@ RUN    apk upgrade --no-cache \
     && touch ~/.ssh/known_hosts
 
 # ZSH
+RUN bash -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ADD data/.zshrc /root/.zshrc
-
-RUN bash -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" \
-    && echo "export PROMPT=Docker$PROMPT" >> ~/.zshrc
-
 
 CMD ["bash"]
